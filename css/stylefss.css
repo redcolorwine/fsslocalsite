@@ -1,0 +1,321 @@
+﻿*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background:rgb(230, 235, 247);
+
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer{
+    height: 30px;
+    margin-top: auto;
+    background:linear-gradient(to top, rgb(7, 126, 223),rgb(13, 96, 163));
+    text-align: center;
+    font-size: 15pt;
+    color: white;
+}
+.head {
+
+    width: 100%;
+    height: 250px;
+    background-image: url('../img/logs.jpg'); 
+    background-size: cover;
+    border-bottom: rgb(105, 180, 241) 2px solid;
+    position: relative;
+}
+
+.head img{
+    z-index: inherit;
+}
+
+.head h1{
+    text-align: center;
+    color:rgb(7, 126, 223);
+    font-family:open-sans;
+    font-weight: bolder;
+    font-size: 28pt;
+    position: absolute;
+    top:20%;
+    left:23%;
+}
+
+.leftPanel{
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+.leftPanel img {
+    margin-top: 5%;
+    height: 250px;
+    width: 100%;
+}
+.hrefz{
+    color:rgb(7, 126, 223);
+    font-size: 20pt;
+    font-family: Consolas;
+}
+
+.lihrefz{
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background:linear-gradient(to top, rgb(7, 126, 223),rgb(13, 96, 163));
+    transition: 0.5s;
+}
+
+
+.lihrefz a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: Consolas;
+    font-size: 17pt;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.lihrefz a:hover{
+    font-size: 21pt;
+}
+
+.rightPanel{
+    float:right;
+    width: 84%;
+    height: 1300px; 
+    position: relative;
+}
+
+#emenu{
+    float:left;
+}
+
+.eli{
+    display: inline;
+    list-style: none;
+    padding-right: 18px;
+}
+
+.eli a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background: rgb(7, 126, 223);
+    border: 1px solid rgb(7, 126, 223);
+    border-radius: 5px;
+    font-family: Consolas;
+    font-size: 18pt;
+    transition: 0.5s;
+}
+.eli a:hover{
+    color:rgb(0, 26, 255);
+    font-size: 22pt;
+}
+
+#tables{
+    width: 100%;
+     height: 800px; 
+     border:  2px outset rgb(201, 212, 235);
+     overflow-y:scroll; 
+    background:  rgb(235, 239, 251);
+}
+.Etable{
+width: 100%;
+text-align: center;
+padding: 0;
+border-spacing: 0;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.Etable td,th{
+    border-bottom: 2px outset rgb(201, 212, 235);
+    transition: 0.5s;
+}
+.Etable th{
+    border-right:2px outset rgb(201, 212, 235);
+    width: 300px;
+    
+}
+.Etable tr{
+    transition: 0.5s;
+}
+/* .Etable tr:hover{
+    background: rgb(190, 209, 250);
+} */
+#sTable{
+    visibility: hidden;
+    /* display:none; */
+}
+#tTable{
+    visibility: hidden;
+    /* display:none; */
+}
+#fTable{
+    visibility: hidden;
+    /* display:none; */
+}
+
+.dop{
+    position: absolute;
+    top:80%;
+    width: 100%;
+}
+.otherSites{
+    margin-top: 55%;
+    float: left;
+    height: 150px;
+    width:40%;
+    margin-top: 1%;
+    transition: 0.5s;
+}
+.Fed{
+    float: right;
+    height: 150px;
+    width: 40%;
+    margin-top: 1%; 
+    transition: 0.5s;
+}
+.otherSites p,.Fed p{
+    text-align: center;
+    color:rgb(7, 126, 223);
+    font-size: 20pt;
+    font-family: Consolas;
+}
+
+.oSul{
+    
+    list-style: none;
+    text-align: center;
+   
+    height:120px;
+}
+.oSul li{
+    background:linear-gradient(to top, rgb(7, 126, 223),rgb(13, 96, 163));
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.oSul a{
+    text-decoration: none;
+    
+    color:rgb(255, 255, 255);
+    font-size: 15pt;
+    font-family: Consolas;
+    
+    transition: 0.5s;
+}
+
+.oSul a:hover{
+    font-size: 22pt;
+}
+
+.tabs {
+    position: relative; /* Относительное позиционирование */
+   }
+   .tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+   }
+   .tab input[type="radio"] { display: none; }
+   .tab-title {
+    background: linear-gradient(to top, rgb(7, 126, 223),rgb(13, 96, 163));
+    color:white;
+    font-family: Consolas;
+    font-size: 15pt;
+    padding: 5px 10px; /* Поля вокруг текста */
+    border: 1px solid #666; /* Параметры рамки */
+    border-radius: 2%;
+    border-bottom: none; /* Снизу линию убираем */
+   }
+   .tab-content {
+    position: absolute; /* Абсолютное позиционирование */
+    border: 1px solid #666; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    left: 0; /* Размещаем у левого края */
+    height: 1000px;
+    overflow-y: scroll;
+    width: calc(100% - 20px); /* Ширина содержимого */
+    display: none; /* Прячем вкладку */
+   }
+   .tab :checked + .tab-title {
+    color:rgb(13, 121, 243);
+
+    position: relative; /* Относительное позиционирование */
+    background: rgb(230, 235, 247); /* Цвет фона */
+    top: 1px; /* Сдвигаем вниз */
+    z-index: 1; /* Отображаем поверх содержимого */
+   }
+   .tab :checked ~ .tab-content {
+    display: block; /* Показываем активную вкладку */
+   }
+@media screen and (max-width: 1200px) {
+    .head h1{
+        font-size: 20pt;
+        left:35%;
+    }
+   
+}
+
+@media screen and (max-width: 900px) {
+
+    .head{
+        text-align: center;
+        height: 100%;
+        position: static;
+    }
+    .head h1{
+        position:static;
+        font-size: 20pt;
+    }
+    .leftPanel{
+        display: block;
+        width: 100%;
+    }
+    .leftPanel img{
+        height:300px;
+        width: 250px;
+    }
+    .tab-content{
+        height: 900px;
+    }
+    .rightPanel{
+        height: 1000px;
+        display: block;
+        width: 100%;
+    }
+    .dop{
+        top:95%;
+    }
+    .otherSites{
+        display: block;
+        float:none;
+        width: 100%;
+    }
+    .Fed{
+        width: 100%;
+        display: block;
+        float:none; 
+    }
+    .Etable{
+        font-size: 8pt;
+    }
+        .Etable img{
+            width: 50px;
+            height: 50px;
+
+        }
+        .Etable td,th{
+            border-bottom: 2px outset rgb(201, 212, 235);
+            transition: 0.5s;
+        }
+        .Etable th{
+            border-right:2px outset rgb(201, 212, 235);
+            width: 200px;
+        }
+
+
+}
